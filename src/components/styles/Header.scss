@@ -5,29 +5,48 @@ header {
 	height: 60px;
 	width: 100%;
 	position: absolute;
-	top: 100px;
+	top: 200px;
 	background-color: transparent;
 
 	nav {
 		height: 100%;
+		background-color: $colorPrimario;
+		border-radius: 15px;
+		padding: 0 20px;
 	}
 
 	ul {
 		@include flex(center, center, row);
 		height: 100%;
-		grid-gap: 20px;
 		list-style: none;
+
+		@include media('<=tablet') {
+			@include flex(center, center, column);
+			li {
+				margin: 5px 0;
+			}
+		}
+
+		@include media('<=phone') {
+			// @include flex(center, center, column);
+		}
 
 		li {
 			@include flex(center, center, row);
+			padding: 0 10px;
 			height: 100%;
-			min-width: 12vw;
+			// min-width: 12vw;
 			color: white;
 			cursor: pointer;
 			transition: all 0.2s ease;
 			&:hover {
-				background-color: white;
-				color: black;
+				// background-color: white;
+				color: yellow;
+			}
+
+			span {
+				margin-left: 10px;
+				font-weight: bold;
 			}
 		}
 	}
