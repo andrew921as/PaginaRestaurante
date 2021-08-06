@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+.carousel__container {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel__slide {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.carousel__pagination {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+	background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+	background: $yellow;
+}

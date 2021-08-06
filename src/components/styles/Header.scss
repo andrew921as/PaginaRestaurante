@@ -5,13 +5,28 @@ header {
 	height: 60px;
 	width: 100%;
 	position: absolute;
-	top: 200px;
+	top: 23vh;
+	z-index: 10;
+	color: white;
 	background-color: transparent;
+	transition: background 0.2s ease;
+
+	&.active {
+		top: 0;
+		position: fixed;
+		background: black;
+		border-top: 2px solid $yellow;
+		border-bottom: 2px solid $yellow;
+
+		nav {
+			border: none;
+		}
+	}
 
 	nav {
 		height: 100%;
-		background-color: $colorPrimario;
-		border-radius: 15px;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
 		padding: 0 20px;
 	}
 
@@ -33,20 +48,30 @@ header {
 
 		li {
 			@include flex(center, center, row);
-			padding: 0 10px;
 			height: 100%;
-			// min-width: 12vw;
-			color: white;
 			cursor: pointer;
 			transition: all 0.2s ease;
-			&:hover {
-				// background-color: white;
-				color: yellow;
-			}
 
 			span {
-				margin-left: 10px;
+				margin: 0 5px;
 				font-weight: bold;
+			}
+
+			a {
+				@include flex(center, center, row);
+				width: 100%;
+				height: 100%;
+				padding: 0 10px;
+				text-decoration: none;
+				color: white;
+
+				&:hover {
+					color: $yellow;
+				}
+
+				&.active {
+					color: $yellow;
+				}
 			}
 		}
 	}
