@@ -1,7 +1,7 @@
 @import './media';
 
 $yellow: #ffed00;
-$colorPrimario: rgba(0, 0, 0, 0.5);
+$transparentBlack: rgba(0, 0, 0, 0.7);
 
 @mixin flex($justify, $align, $direction) {
 	display: flex;
