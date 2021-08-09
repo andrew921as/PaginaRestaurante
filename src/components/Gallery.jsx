@@ -16,7 +16,7 @@ const Gallery = () => {
     return (
         <article className="gallery__container">
             <div className="gallery__item wide">
-                <img src={Img1} alt="Nuestro queso"/>
+                <img style={{objectPosition: "left"}} src={Img1} alt="Nuestro queso"/>
                 <div className="details">
                     <h2>Somos Natural</h2>
                     <p>Nuestro queso es elaborado a base de leche de pastoreo, 100% natural.</p>
