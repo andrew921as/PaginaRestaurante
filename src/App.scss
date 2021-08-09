@@ -1,8 +1,10 @@
 @import './media';
 
+// Variables
 $yellow: #ffed00;
 $transparentBlack: rgba(0, 0, 0, 0.7);
 
+//Functions
 @mixin flex($justify, $align, $direction) {
 	display: flex;
 	justify-content: $justify;
@@ -10,7 +12,18 @@ $transparentBlack: rgba(0, 0, 0, 0.7);
 	flex-direction: $direction;
 }
 
+//Fonts
+@font-face {
+	font-family: 'autography';
+	src: url('./fonts/Autography.otf');
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
 }

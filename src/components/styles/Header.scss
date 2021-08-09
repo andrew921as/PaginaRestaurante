@@ -24,10 +24,56 @@ header {
 	}
 
 	nav {
+		position: relative;
 		height: 100%;
 		border-top: 2px solid white;
 		border-bottom: 2px solid white;
 		padding: 0 20px;
+
+		.mobile__nav {
+			display: none;
+			height: 100%;
+			width: 80vw;
+			font-size: 2em;
+
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+
+		@include media('<=tablet') {
+			ul {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin-top: 62px;
+				background-color: black;
+				overflow: hidden;
+				height: 0;
+				width: 100%;
+				transition: all 0.2s ease;
+				// border: 2px white solid;
+				// border-top: none;
+
+				&.active {
+					height: 250px;
+				}
+
+				li {
+					padding: 10px 0;
+
+					span {
+						display: none;
+					}
+				}
+			}
+
+			.mobile__nav {
+				@include flex(space-between, center, row);
+			}
+		}
 	}
 
 	ul {

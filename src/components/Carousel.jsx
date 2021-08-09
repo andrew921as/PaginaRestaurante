@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay, EffectFade} from 'swiper';
 
@@ -14,14 +14,21 @@ import './styles/Carousel.scss';
 // Swiper modules
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
-
-
-
 const Carousel = () => {
 
+    const carouselRef = useRef(null);
     const [offsetY, setOffsetY] = useState(0);
 
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+    const handleScroll = () => {
+        setOffsetY(window.pageYOffset)
+
+        let windowHeight = window.innerHeight;
+        if(window.pageYOffset >= (windowHeight * 0.6)){
+            carouselRef.current.classList.add("fade");
+        } else {
+            carouselRef.current.classList.remove("fade");
+        }
+    };
 
     const pagination = {
         "clickable": true,
@@ -40,6 +47,7 @@ const Carousel = () => {
     return (
         <Swiper
             // style={{transform: `translateY(${offsetY * 0.2}px)`}}
+            ref={carouselRef}
             className="carousel__container"
             effect={'fade'}
             speed={1000}
