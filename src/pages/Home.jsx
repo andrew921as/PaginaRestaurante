@@ -13,6 +13,7 @@ const Home = () => {
                 <Carousel />
             </section>
             <section className="gallery__section">
+                <h3>Somos Natural </h3>
                 <Gallery />
             </section>
 

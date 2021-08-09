@@ -1,3 +1,4 @@
+@import '../../App.scss';
 main {
 	width: 100%;
 	min-height: 100vh;
@@ -12,4 +13,11 @@ main {
 
 .gallery__section {
 	padding: 100px 0;
+	h3{	
+		@include flex(center, center, row);	
+		font-family: "autography";
+		font-size: 5em;
+		font-weight: 100;
+		text-align: center;
+	}
 }
