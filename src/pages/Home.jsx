@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import Gallery from '../components/Gallery';
@@ -14,6 +15,8 @@ const Home = () => {
             <section className="test">
                 <Gallery />
             </section>
+
+            <Footer />
         </main>
     )
 }
