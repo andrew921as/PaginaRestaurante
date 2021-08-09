@@ -21,42 +21,59 @@ footer{
 		}
 		.logo{
 			padding-right: 2em;
+			@include media("<=tablet"){
+				padding-top: 2em;
+			}
 			img{
 				position: relative;
 				width: 200px;
 			}
 		}
-		.menu{
+		.texto{
+			display: flex;
+			@include media("<=tablet"){
+				padding-top: 1em;
+			}
+			.menu{
 
-			padding-left: 3em;
-			ul{
-				list-style: none;
-				font-size: 15px;		
-				li{
-					cursor: pointer;
-					transition: all 0.2s ease;
-					&:hover {
-						// background-color: white;
-						color: yellow;
+				padding-left: 3em;
+				ul{
+					list-style: none;
+					font-size: 15px;		
+					li{
+						cursor: pointer;
+						transition: all 0.2s ease;
+						&:hover {
+							// background-color: white;
+							color: yellow;
+						}
 					}
 				}
 			}
-		}
 
-		.follow{
-			padding-left: 12em;
-			ul{
-				list-style: none;
-				font-size: 12px;
-			}
-			img{
+
+			.follow{
+				@include media("<=tablet"){
+					padding-left: 3em;
+				}
+				padding-left: 12em;
+
+				ul{
+					list-style: none;
+					font-size: 12px;
+				}
+				img{
 				cursor: pointer;
+				&:hover {
+					border-radius: 50%;
+					 background-color: rgba(230, 233, 51, 0.5);
+				}
 				position: relative;
 				width: 50px;
-			}
+				}
 			
-		}
-
+			}
+		}	
 
 	}
 
