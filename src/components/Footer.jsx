@@ -7,29 +7,32 @@ import LogoInsta from '../images/LogoRedes/LogoInsta.png';
 const Footer = () => {
     return (
         <footer>
-            <div className="row">
+            <div className="row">   
                 {/* Column 1  */}
-                <div>
+                <div className="logo">
                     <img src={LogoK}/>
                 </div>
                 {/* Column 2 */}
-                <div>
+                <div className="menu">
                     <h4>NAVEGACIÓN</h4>
+                    <br />
                     <ul>
                         <li>Inicio</li>
                         <li>Somos Natural</li>
                         <li>¿Dónde estamos?</li>
                         <li>Contacto</li>
                     </ul>
+                    
                 </div>
                 {/* Column 3 */}
+                <div className="follow">
                 <h4>SÍGUENOS EN</h4>
-                <ul>
-                    <li><img src={LogoFace}/><img src={LogoInsta}/></li>
-                    <li>Ⓒ Copyright 2021<br></br> Todos los derechos reservados</li>
-
-                </ul>
-
+                    <ul>
+                        <li><img src={LogoFace}/><img src={LogoInsta}/></li>
+                        <br />
+                        <li>Ⓒ Copyright 2021<br></br> Todos los derechos reservados</li>
+                    </ul>
+                </div>
 
             </div> 
 

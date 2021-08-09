@@ -1,10 +1,64 @@
 @import '../../App.scss';
 
+
 footer{
-    @include flex(center, center, row);
-	height: 60px;
-	width: 100%;
+	@include flex(center, center, row);
+	color:whitesmoke;
+	background:url("../../images/Footer/2Footer.jpg");
+	padding-top: 1em;
 	position: absolute;
-	top: 200px;
-	background-color: transparent;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	align-items: center;
+	@include media("<=tablet"){
+		height: 300px;
+	}
+	.row{
+		display: flex;
+		@include media("<=tablet"){
+			display: inline;
+		}
+		.logo{
+			padding-right: 2em;
+			img{
+				position: relative;
+				width: 200px;
+			}
+		}
+		.menu{
+
+			padding-left: 3em;
+			ul{
+				list-style: none;
+				font-size: 15px;		
+				li{
+					cursor: pointer;
+					transition: all 0.2s ease;
+					&:hover {
+						// background-color: white;
+						color: yellow;
+					}
+				}
+			}
+		}
+
+		.follow{
+			padding-left: 12em;
+			ul{
+				list-style: none;
+				font-size: 12px;
+			}
+			img{
+				cursor: pointer;
+				position: relative;
+				width: 50px;
+			}
+			
+		}
+
+
+	}
+
+
 }
