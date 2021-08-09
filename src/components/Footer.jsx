@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row">   
                 {/* Column 1  */}
                 <div className="logo">
-                    <img src={LogoK}/>
+                    <img src={LogoK} alt="Logo karen's pizza"/>
                 </div>
                 {/* Column 2 */}
                 <div className="texto">
@@ -29,9 +29,9 @@ const Footer = () => {
                     <div className="follow">
                         <h4>SÍGUENOS EN</h4>
                         <ul>
-                            <li><img src={LogoFace}/><img src={LogoInsta}/></li>
+                            <li><img src={LogoFace} alt="Logo facebook"/><img src={LogoInsta} alt="Logo insta"/></li>
                             <br />
-                            <li>Ⓒ Copyright 2021<br></br> Todos los derechos reservados</li>
+                            <li>Ⓒ Copyright { new Date().getFullYear() }<br></br> Todos los derechos reservados</li>
                         </ul>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const Home = () => {
             <section className="carousel__section">
                 <Carousel />
             </section>
-            <section className="test">
+            <section className="gallery__section">
                 <Gallery />
             </section>
 

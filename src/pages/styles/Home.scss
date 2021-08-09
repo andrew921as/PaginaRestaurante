@@ -1,9 +1,6 @@
 main {
 	width: 100%;
 	min-height: 100vh;
-	// background: url('../../images/PortadaSlide/1PORTADA.jpg');
-	// background-size: cover;
-	// background-position: top center;
 	background-color: white;
 }
 
@@ -13,7 +10,6 @@ main {
 	z-index: 1;
 }
 
-.test {
-	padding-top: 100px;
-	height: 1000px;
+.gallery__section {
+	padding: 100px 0;
 }
