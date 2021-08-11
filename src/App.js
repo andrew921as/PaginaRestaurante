@@ -1,11 +1,11 @@
 import './App.scss';
-import Home from './pages/Home';
+import Location from './pages/Location';
 // import AboutUs from './pages/AboutUs';
 
 function App() {
 	return (
 		<div className="App">
-			<Home />
+			<Location />
 		</div>
 	);
 }

@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+.allC{
+    
+    .row{
+        display: flex;
+
+        .cityBorder{
+            border: 1px solid rgb(211,211,211);
+            border-radius: 4px;
+            padding: 0% 0%;
+            margin-right: 0.2em;
+
+            .title{
+                background-color: #FAB931;
+                padding: 0.75em;
+                margin-bottom: 1em;
+                text-align: center;
+                color: white;
+            }
+
+            button{
+                background-color: #EBCD51; /* Green */
+                border: none;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 4px;
+                margin: 0.2em;
+                &:hover {
+                    color: white;
+                }
+            }
+            .buttonBogota, .buttonPalmira{
+                padding: 0.6em 4.5em;
+            }
+            .buttonCali{
+                padding: 0.6em 5.55em;
+            }
+
+            ul{
+                list-style: none;
+            }
+        }
+    }
+}
