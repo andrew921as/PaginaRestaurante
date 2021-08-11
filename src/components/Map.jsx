@@ -25,7 +25,7 @@ const Map = () => {
 
                 <div className="cityBorder">
                     <div className="title">
-                        <h3>Sedes</h3>
+                        <h2>Sedes</h2>
                     </div>
                     <div className="cityButtons">
                         <ul>

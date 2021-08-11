@@ -1,11 +1,24 @@
 @import '../../App.scss';
 
 .allC{
+    @include flex(center, center, row);	
+    padding-top: 1em;
+	width: 100%;
+
+    @include media('<=tablet') {
+		height: 400px;
+	}
     
     .row{
         display: flex;
+        @include media('<=tablet') {
+			display: inline;
+		}
 
         .cityBorder{
+            @include media('<=tablet') {
+                margin-top: 1em;
+            }
             border: 1px solid rgb(211,211,211);
             border-radius: 4px;
             padding: 0% 0%;
@@ -13,7 +26,7 @@
 
             .title{
                 background-color: #FAB931;
-                padding: 0.75em;
+                padding: 0.6em;
                 margin-bottom: 1em;
                 text-align: center;
                 color: white;
