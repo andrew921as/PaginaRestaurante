@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from 'react';
+
+//Style
+import './styles/AboutUs.scss';
 
 const AboutUs = () => {
     return (
-        <div>
-            Somos
-            <Header />
-        </div>
+        <main className="AboutUs">
+            <h1>Somos natural</h1>
+        </main>
     )
 }
 

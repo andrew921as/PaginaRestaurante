@@ -4,6 +4,10 @@ import SwiperCore, { Pagination, Autoplay, EffectFade} from 'swiper';
 
 //Images
 import Img1 from '../images/PortadaSlide/1PORTADA.jpg';
+import Img2 from '../images/PortadaSlide/2PORTADA.jpg';
+import Img3 from '../images/PortadaSlide/3PORTADA.jpg';
+import Img4 from '../images/PortadaSlide/4PORTADA.jpg';
+
 
 // Styles
 import 'swiper/swiper.scss';
@@ -15,6 +19,13 @@ import './styles/Carousel.scss';
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
 const Carousel = () => {
+
+    const images = [
+        Img1,
+        Img2,
+        Img3,
+        Img4,
+    ];
 
     const carouselRef = useRef(null);
     const [offsetY, setOffsetY] = useState(0);
@@ -62,30 +73,16 @@ const Carousel = () => {
                 "disableOnInteraction": false
             }}
         >
-            <SwiperSlide  >
-                <img
-                    style={{transform: `translateY(${offsetY * 0.2}px)`}}
-                    className="carousel__slide"
-                    src={Img1} 
-                    alt="Img1" 
-                />
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="-500">
-                <img 
-                    style={{transform: `translateY(${offsetY * 0.2}px)`}}
-                    className="carousel__slide"
-                    src="https://images.unsplash.com/photo-1589906493606-a6ca2a06078b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-                    alt="Img1" 
-                />
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="100">
-                <img 
-                    style={{transform: `translateY(${offsetY * 0.2}px)`}}
-                    className="carousel__slide"
-                    src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-                    alt="Img1" 
-                />
-            </SwiperSlide>
+            { images.map((image) => {
+                return <SwiperSlide>
+                            <img 
+                                style={{transform: `translateY(${offsetY * 0.2}px)`}}
+                                className="carousel__slide"
+                                src={image}
+                                alt="Portada karen's" 
+                            />
+                        </SwiperSlide>
+            })}
         </Swiper>
     )
 }
