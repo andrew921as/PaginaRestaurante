@@ -5,19 +5,23 @@
     padding-top: 1em;
 	width: 100%;
 
-    @include media('<=tablet') {
-		height: 400px;
-	}
-    
     .row{
         display: flex;
         @include media('<=tablet') {
 			display: inline;
+            min-width: 250px;
 		}
+
+        iframe{
+            @include media('<=tablet') {
+                width: 320px;
+            }
+        }
 
         .cityBorder{
             @include media('<=tablet') {
                 margin-top: 1em;
+                width: 320px;
             }
             border: 1px solid rgb(211,211,211);
             border-radius: 4px;
@@ -33,7 +37,7 @@
             }
 
             button{
-                background-color: #EBCD51; /* Green */
+                background-color: #F2E205; 
                 border: none;
                 text-align: center;
                 display: inline-block;

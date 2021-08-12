@@ -16,7 +16,7 @@ const Map = () => {
 
     const PalmiraMap = () => {
         var mapG = document.getElementById("MapG");
-        mapG.src = "https://www.google.com/maps/d/u/0/embed?mid=165J5dshWMXtkxTkI3MNUtzh2hH-YZl14"
+        mapG.src = "https://www.google.com/maps/d/u/0/embed?mid=11wpCFmQZcsQ1mObI98RKit8y8YvYWqie"
     }
     
     return (
