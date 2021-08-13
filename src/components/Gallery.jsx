@@ -6,6 +6,7 @@ import Img3 from '../images/Gallery/Galeria3.jpg';
 import Img4 from '../images/Gallery/Galeria4.jpg';
 import Img5 from '../images/Gallery/Galeria5.jpg';
 import Img6 from '../images/Gallery/Galeria6.jpg';
+import LeafIcon from '../images/Icons/hojita.png';
 
 
 //Style
@@ -20,6 +21,7 @@ const Gallery = () => {
                 <div className="details">
                     <h2>Somos Natural</h2>
                     <p>Nuestro queso es elaborado a base de leche de pastoreo, 100% natural.</p>
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item tall">
@@ -29,6 +31,7 @@ const Gallery = () => {
                     <p>Todos nuestros postres y sus salsas son hechos en casa.
                         100% sabor natural
                     </p>
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item">
@@ -38,18 +41,19 @@ const Gallery = () => {
                     <p>Todos nuestros postres y sus salsas son hechos en casa.
                         100% sabor natural
                     </p>
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item">
                 <img src={Img2} alt="Nuestro queso"/>
                 <div className="details">
-                    
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item">
                 <img src={Img3} alt="Nuestro queso"/>
                 <div className="details">
-                    
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item">
@@ -59,6 +63,7 @@ const Gallery = () => {
                     <p>Todos nuestros platos son preparados con la mejor pasta.
                         100% Natural
                     </p>
+                    <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
         </article>
