@@ -37,11 +37,16 @@ footer {
 				ul {
 					list-style: none;
 					font-size: 15px;
-					li {
-						cursor: pointer;
-						transition: all 0.2s ease;
+					a {
+						text-decoration: none;
+						color: white;
+		
 						&:hover {
-							color: yellow;
+							color: $yellow;
+						}
+		
+						&.active {
+							color: $yellow;
 						}
 					}
 				}

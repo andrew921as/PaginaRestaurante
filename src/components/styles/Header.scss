@@ -11,6 +11,7 @@ header {
 	background-color: transparent;
 	transition: background 0.2s ease;
 
+
 	&.active {
 		top: 0;
 		position: fixed;
@@ -24,10 +25,14 @@ header {
 	}
 
 	nav {
+		&.shadow{
+			background-color: $transparentBlack;
+			border-radius: 15px;
+		}
 		position: relative;
 		height: 100%;
-		border-top: 2px solid white;
-		border-bottom: 2px solid white;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
 		padding: 0 20px;
 
 		.mobile__nav {

@@ -40,8 +40,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="" ref={headerRef}>
-            <nav>
+        <header ref={headerRef}>
+            <nav className={activeWindow != "/"?"shadow":""}>
                 <ul className={ isMenuOpen && "active" }>
                     <li> <Link className={ activeWindow === "/" ? "active" : "null"} to="/">INICIO</Link> <span>‧</span></li>
                     <li><Link className={ activeWindow === "/somos-natural" ? "active" : "null"} to="/somos-natural">SOMOS NATURAL</Link> <span>‧</span></li>

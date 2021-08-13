@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import './styles/Footer.scss';
 import LogoK from '../images/LogoKarens/LogoK.png';
 import LogoFace from '../images/LogoRedes/LogoFace.png';
 import LogoInsta from '../images/LogoRedes/LogoInsta.png';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+    const location = useLocation(); // Url
+    const [activeWindow, setActiveWindow] = useState(location.pathname); // Url pathname
+    useEffect(() => {
+        setActiveWindow(location.pathname);
+
+    }, [location]);
     return (
         <footer>
             <div className="row">   
@@ -18,10 +25,10 @@ const Footer = () => {
                         <h4>NAVEGACIÓN</h4>
                         <br />
                         <ul>
-                            <li>Inicio</li>
-                            <li>Somos Natural</li>
-                            <li>¿Dónde estamos?</li>
-                            <li>Contacto</li>
+                        <li><Link className={ activeWindow === "/" ? "active" : "null"} to="/">INICIO</Link></li>
+                        <li><Link className={ activeWindow === "/somos-natural" ? "active" : "null"} to="/somos-natural">SOMOS NATURAL</Link></li>
+                        <li><Link className={ activeWindow === "/ubicacion" ? "active" : "null"} to="/ubicacion">¿DÓNDE ESTAMOS?</Link></li>
+                        <li><Link className={ activeWindow === "/contacto" ? "active" : "null"} to="/contacto">CONTACTO</Link></li>
                         </ul>
                     
                     </div>
