@@ -1,0 +1,33 @@
+@import '../../App.scss';
+
+
+.containerM{
+	font-family: 'autography';
+	font-size: 5em;
+    text-align: center;
+    height: 8em;
+    position: relative;
+
+    .imagenes{
+        @include flex(center, center, column);
+        position: relative;
+
+        a{
+            @include flex(center, center, column);
+            position: relative;
+        
+            img  {
+            padding-top: 350px;
+            position: absolute;
+            width: 5em;
+            transition: opacity 1s ease-in-out;
+         }
+        
+            &:hover .segundaI{
+            opacity: 0;
+         }
+        }
+    }
+
+
+}

@@ -27,10 +27,10 @@ const Header = () => {
         }
     }
 
-    useEffect(() => {
-        setActiveWindow(location.pathname);
+        useEffect(() => {
+            setActiveWindow(location.pathname);
 
-    }, [location]);
+        }, [location]);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
