@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+.Somos{
+    @include flex(center, center, row);	
+    img{
+        width: 100%;
+    }
+}
