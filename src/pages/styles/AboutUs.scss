@@ -1,5 +1,34 @@
 @import '../../App.scss';
 
-.AboutUs {
-	background-color: grey;
+main {
+	width: 100%;
+	min-height: 100vh;
+	background-color: white;
+}
+
+.WeAreNatural__section {
+	padding-top: 400px;
+	h1 {
+		@include flex(center, center, row);
+		font-family: 'autography';
+		font-size: 5em;
+		font-weight: 100;
+		text-align: center;
+	}
+	.container{
+		@include flex(center, center, row);
+		margin-top: 5em;
+		margin-bottom: 3em;
+		p{
+			color: dimgray;
+			font-size: 1em;
+			font-weight: 100;
+			text-align: center;
+			max-width: 700px;
+			font-family: 'Montserrat';
+			@include media('<=tablet') {
+                padding: 3em;
+            }
+		}
+	}
 }
