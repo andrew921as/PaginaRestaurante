@@ -37,7 +37,7 @@ const Map = () => {
                 </div>
 
                 <div>
-                    <iframe id="MapG" src="https://www.google.com/maps/d/embed?mid=1mSF3C_QFZ1I68nXmfo47y7ZCGM06dFhR" width="640" height="480"></iframe>
+                    <iframe id="MapG" title="Map" src="https://www.google.com/maps/d/embed?mid=1mSF3C_QFZ1I68nXmfo47y7ZCGM06dFhR" width="640" height="480"></iframe>
                 </div>
 
             </div>
