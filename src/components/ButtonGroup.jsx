@@ -4,8 +4,7 @@ import './styles/ButtonGroup.scss';
 const ButtonGroup = (props) => {
     return (
         <article className="group">
-
-            <div className="group__title">{props.title}</div>
+           <div className="group__title"> {props.title}</div>
             <div className="group__section">
 
                 { props.sedes.map((sede) => {
