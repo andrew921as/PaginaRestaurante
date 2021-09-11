@@ -1,33 +1,46 @@
 @import '../../App.scss';
 
-
-.containerM{
+.containerM {
+	// background-color: red;
 	font-family: 'autography';
 	font-size: 5em;
-    text-align: center;
-    height: 8em;
-    position: relative;
+	text-align: center;
+	min-height: 8em;
+	position: relative;
 
-    .imagenes{
-        @include flex(center, center, column);
-        position: relative;
+	.imagenes {
+		@include flex(center, center, row);
+		position: relative;
+		background: url('../../images/Menu/BG.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
 
-        a{
-            @include flex(center, center, column);
-            position: relative;
-        
-            img  {
-            padding-top: 350px;
-            position: absolute;
-            width: 5em;
-            transition: opacity 1s ease-in-out;
-         }
-        
-            &:hover .segundaI{
-            opacity: 0;
-         }
-        }
-    }
+		a {
+			@include flex(center, center, column);
+			position: relative;
+			margin: 80px;
+			border-radius: 2%;
 
+			img {
+				width: 5em;
+				transition: opacity 0.7s ease-in-out;
+				border-radius: 8%;
+			}
 
+			.segundaI {
+				position: absolute;
+			}
+
+			&:hover .segundaI {
+				opacity: 0;
+			}
+		}
+	}
+
+	@include media('<=desktop') {
+		.imagenes {
+			background-image: none;
+			@include flex(center, center, column);
+		}
+	}
 }
