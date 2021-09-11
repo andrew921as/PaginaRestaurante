@@ -1,9 +1,12 @@
 import React from 'react';
 import './styles/Menu.scss';
 //Images
-import Menu1 from '../images/Menu/PortadaM1.jpg';
-import Menu2 from '../images/Menu/PortadaM2.jpg';
-import archivo from '../images/Menu/menu-karens.pdf';
+import Menu1Esp from '../images/Menu/Portada1Esp.jpg';
+import Menu2Esp from '../images/Menu/Portada2Esp.jpg';
+import Menu1Eng from '../images/Menu/Portada1English.jpg';
+import Menu2Eng from '../images/Menu/Portada2English.jpg';
+import menuEsp from '../images/Menu/menuEsp.pdf';
+import menuEng from '../images/Menu/menuEng.pdf';
 
 
 const Menu = () => {
@@ -13,12 +16,17 @@ const Menu = () => {
         <div className="containerM">
             <h3>Menú</h3>
             <div className="imagenes">
-                <a href={archivo} target="_blank">
-            
-             <img style={{objectPosition: "center"}} src={Menu2}/>
-             <img className="segundaI" style={{objectPosition: "center"}} src={Menu1}/>
-             </a>
+                <a href={menuEsp} target="_blank" rel="noreferrer">
+                    <img style={{objectPosition: "center"}} src={Menu2Esp} alt="Menu1"/>
+                    <img className="segundaI" style={{objectPosition: "center"}} src={Menu1Esp} alt="Menu1 seleccionado"/>
+                </a>
+
+                <a href={menuEng} target="_blank" rel="noreferrer">
+                    <img style={{objectPosition: "center"}} src={Menu2Eng} alt="Menu1"/>
+                    <img className="segundaI" style={{objectPosition: "center"}} src={Menu1Eng} alt="Menu1 seleccionado"/>
+                </a>
             </div>
+
         
         
         </div>

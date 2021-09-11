@@ -10,7 +10,7 @@ const Home = () => {
             <section className="carousel__section">
                 <Carousel />
             </section>
-                <Menu/>       
+            <Menu/>       
             <section className="gallery__section">
                 <h3>Somos Natural </h3>
                 <Gallery />

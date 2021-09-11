@@ -4,6 +4,7 @@ import './App.scss';
 //Layout
 import Header from './components/Header';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 //Pages
 import Home from './pages/Home';
@@ -25,6 +26,7 @@ function App() {
 				<Route path="/" component={Home} />
 			</Switch>
 			<Footer />
+			<WhatsAppButton />
 		</Router>
 	);
 }
