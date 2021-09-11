@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className="follow">
                         <h4>SÍGUENOS EN</h4>
                         <ul>
-                            <li><img src={LogoFace} alt="Logo facebook"/><img src={LogoInsta} alt="Logo insta"/></li>
+                            <li><a href="https://www.facebook.com/KarensPizzaOficial" target="_blank"><img src={LogoFace} alt="Logo facebook"/></a><a href="https://www.instagram.com/karenspizzaoficial/" target="_blank"><img src={LogoInsta} alt="Logo insta"/></a></li>
                             <br />
                             <li>Ⓒ Copyright { new Date().getFullYear() }<br></br> Todos los derechos reservados</li>
                         </ul>

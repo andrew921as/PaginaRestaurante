@@ -1,43 +1,50 @@
-import Img1 from '../images/Gallery/Galeria1.jpg';
-import Img2 from '../images/Gallery/Galeria2.jpg';
-import Img3 from '../images/Gallery/Galeria3.jpg';
+import Img1 from '../images/Restaurants/Novena.jpg';
+import Img2 from '../images/Restaurants/CiudadJardin.jpg';
+import Img3 from '../images/Restaurants/Roosvelt.jpg';
+import Img4 from '../images/Restaurants/52N.jpg';
+import Img5 from '../images/Restaurants/Granada.jpg';
+import Img6 from '../images/Restaurants/LaFlora.jpg';
+import Img7 from '../images/Restaurants/SanFernando.jpg';
+import Img8 from '../images/Restaurants/Bogota.jpg';
+import Img9 from '../images/Restaurants/Palmira.jpg';
+
 
 //CALI
 const caliImages = [
 	{
 		name: 'Calle 9',
 		img: Img1,
-		link: 'https://www.google.com/',
+		link: 'https://wa.link/28gyf0',
 	},
 	{
 		name: 'Ciudad Jardín',
 		img: Img2,
-		link: 'https://www.youtube.com/',
+		link: 'https://wa.link/pzw3qg',
 	},
 	{
 		name: 'Avenida Roosevelt',
 		img: Img3,
-		link: 'https://www.facebook.com/',
+		link: 'https://wa.link/0pekpf',
 	},
 	{
 		name: 'Calle 52',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img4,
+		link: 'https://wa.link/ectbt9',
 	},
 	{
 		name: 'Granada',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img5,
+		link: 'https://wa.link/09hjk9',
 	},
 	{
 		name: 'La Flora',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img6,
+		link: 'https://wa.link/7dy7ol',
 	},
 	{
 		name: 'San Fernando',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img7,
+		link: 'https://wa.link/6cl9nk',
 	},
 ];
 
@@ -45,8 +52,8 @@ const caliImages = [
 const bogotaImages = [
 	{
 		name: 'Calle 94',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img8,
+		link: 'https://wa.link/lvff07',
 	},
 ];
 
@@ -54,8 +61,8 @@ const bogotaImages = [
 const palmiraImages = [
 	{
 		name: 'Calle 52',
-		img: Img3,
-		link: 'https://www.facebook.com/',
+		img: Img9,
+		link: 'https://wa.link/314kqo',
 	},
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonGroup from '../components/ButtonGroup';
+import Formulary from '../components/Formulary';
 import { caliImages, palmiraImages, bogotaImages } from '../components/GroupImages';
 import './styles/Contact.scss';
 
@@ -14,6 +15,7 @@ const Contact = () => {
                 <ButtonGroup title="PALMIRA" sedes={palmiraImages} />
 
             </section>
+            <Formulary/>
         </main>
     )
 }

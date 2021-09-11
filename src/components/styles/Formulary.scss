@@ -1,0 +1,10 @@
+@import '../../App.scss';
+
+.GoogleForm{
+    @include flex(center, center, row);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .formularioG{
+        border-radius: 1%;
+    }
+}
