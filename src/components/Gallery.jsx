@@ -47,12 +47,18 @@ const Gallery = () => {
             <div className="gallery__item">
                 <img src={Img2} alt="Nuestro queso"/>
                 <div className="details">
+                    <h2>Nuestros tomates</h2>
+                    <p>Nuestros tomates los cultivamos con amor en invernaderos. 
+                    </p>
                     <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
             <div className="gallery__item">
                 <img src={Img3} alt="Nuestro queso"/>
                 <div className="details">
+                    <h2>Nuestra agua</h2>
+                    <p>El agua es fuente de la naturaleza y un obsequio de la vida, pide y prueba nuestras botellas de agua totalmente gratis. 
+                    </p>
                     <img src={LeafIcon} alt="Natural" />
                 </div>
             </div>
