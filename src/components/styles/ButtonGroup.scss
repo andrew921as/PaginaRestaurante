@@ -16,13 +16,24 @@
 	font-style: italic;
 	border-radius: 15px;
 	box-shadow: 2px 2px 2px -2px black;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($yellow, 5%);
+	}
 }
 
 .group__section {
 	@include flex(center, center, row);
 	flex-wrap: wrap;
-	margin-top: 30px;
-	height: auto;
+	padding-top: 30px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: all 1s;
+
+	&.active {
+		max-height: 2000px;
+	}
 }
 
 .group__circle {

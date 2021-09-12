@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/ButtonGroup.scss';
 
 const ButtonGroup = (props) => {
+
+    const [isActive, setIsActive] = useState(false);
+
     return (
         <article className="group">
-           <div className="group__title"> {props.title}</div>
-            <div className="group__section">
+            <div className="group__title" onClick={() => setIsActive(!isActive)}> {props.title}</div>
+            <div className={`group__section ${isActive && "active"}`}>
 
                 { props.sedes.map((sede) => {
                     return <a href={sede.link} target="_blank" rel="noreferrer" className="group__circle">
