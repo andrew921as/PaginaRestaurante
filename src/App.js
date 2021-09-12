@@ -11,15 +11,18 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Location from './pages/Location';
 import Contact from './pages/Contact';
+import Form from './pages/Form';
 
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+
 	return (
 		<Router>
 			<ScrollToTop />
 			<Header />
 			<Switch>
+				<Route path="/formulario" component={Form} />
 				<Route path="/contacto" component={Contact} />
 				<Route path="/ubicacion" component={Location} />
 				<Route path="/somos-natural" component={AboutUs} />

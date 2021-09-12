@@ -33,11 +33,17 @@ const Header = () => {
         }, [location]);
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        if(activeWindow !== "/formulario"){
+            window.addEventListener('scroll', handleScroll);
+        }
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    }, []);
+    }, [activeWindow]);
+
+    if(activeWindow === "/formulario"){
+        return null;
+    }
 
     return (
         <header ref={headerRef}>

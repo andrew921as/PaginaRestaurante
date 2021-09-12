@@ -12,6 +12,11 @@ const Footer = () => {
         setActiveWindow(location.pathname);
 
     }, [location]);
+
+    if(activeWindow === "/formulario"){
+        return null;
+    }
+
     return (
         <footer>
             <div className="row">   
