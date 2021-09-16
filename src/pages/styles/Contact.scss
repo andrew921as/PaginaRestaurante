@@ -9,7 +9,12 @@ main {
 .contact__section {
 	@include flex(flex-start, center, column);
 	margin-top: 50vh;
-	// background-color: red;
+	
+	
+	@include media('<=tablet'){
+		padding-top: 80px;
+		margin-top: 0;
+	}
 
 	h3 {
 		font-family: 'autography';

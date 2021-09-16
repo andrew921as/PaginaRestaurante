@@ -9,6 +9,12 @@ main {
 .map__section{
     padding-top: 350px;
 	padding-bottom: 100px;
+
+	@include media('<=tablet'){
+		padding-top: 80px;
+		padding-bottom: 0px;
+	}
+
 	h3{	
         @include media('<=tablet') {
             margin-bottom: 2em;

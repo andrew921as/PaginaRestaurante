@@ -8,6 +8,11 @@ main {
 
 .WeAreNatural__section {
 	padding-top: 400px;
+
+	@include media('<=tablet'){
+		padding-top: 80px;
+	}
+
 	h1 {
 		@include flex(center, center, row);
 		font-family: 'autography';
