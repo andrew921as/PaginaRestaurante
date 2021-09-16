@@ -14,7 +14,7 @@ const caliImages = [
 	{
 		name: 'Calle 9',
 		img: Img1,
-		link: 'https://wa.link/28gyf0',
+		link: 'https://wa.link/r2xegp',
 	},
 	{
 		name: 'Ciudad Jardín',
