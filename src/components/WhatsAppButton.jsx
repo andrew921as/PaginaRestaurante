@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 import './styles/WhatsAppButton.scss';
+import whatB from '../images/Servicio/AtencionCliente.png';
 
 const WhatsAppButton = () => {
 
@@ -13,7 +14,7 @@ const WhatsAppButton = () => {
 
     return (
         <a href="https://wa.link/axv209" target="_blank" rel="noreferrer" className="wppButton">
-            <FaWhatsapp />
+            <img src={whatB} alt="LogoWhat"/>
         </a>
     )
 }
