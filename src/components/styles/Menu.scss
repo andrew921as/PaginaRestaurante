@@ -26,6 +26,9 @@
 				width: 5em;
 				transition: opacity 0.7s ease-in-out;
 				border-radius: 8%;
+				@include media('<=tablet') {
+					width: 300px;
+				}
 			}
 
 			.segundaI {

@@ -60,7 +60,7 @@ const bogotaImages = [
 //PALMIRA
 const palmiraImages = [
 	{
-		name: 'Calle 52',
+		name: 'Calle 57',
 		img: Img9,
 		link: 'https://wa.link/314kqo',
 	},

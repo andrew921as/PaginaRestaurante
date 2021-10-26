@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
     }
 
     return (
-        <a href="https://wa.link/axv209" target="_blank" rel="noreferrer" className="wppButton">
+        <a href="https://wa.link/07weyg" target="_blank" rel="noreferrer" className="wppButton">
             <img src={whatB} alt="LogoWhat"/>
         </a>
     )

@@ -27,7 +27,7 @@
 	&:hover {
 		transform: scale(1.1);
 		color: darken($color: white, $amount: 5%);
-		background-color: darken($color: green, $amount: 5%);
+		background-color: darken($color: transparent, $amount: 5%);
 		// background-color: darker(green, 0.1);
 	}
 }
